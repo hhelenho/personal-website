@@ -44,10 +44,6 @@ function Hero() {
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.intro}>
-        <p className={styles.status}>
-          <span className={styles.statusDot} aria-hidden="true" />
-          Live in production
-        </p>
         <p className={styles.eyebrow}>New York, NY</p>
         <h1 className={styles.name}>
           {'Helen Ho'.split('').map((letter, i) => (
