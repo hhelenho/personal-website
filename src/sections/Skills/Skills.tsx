@@ -3,6 +3,10 @@ import Reveal from '../../common/Reveal';
 
 const groups = [
   {
+    label: 'Asset classes',
+    items: ['Equity', 'Fixed Income', 'Structured Credit', 'Digital Assets & Crypto'],
+  },
+  {
     label: 'Product & design',
     items: ['Product discovery', 'Requirements', 'Stakeholder alignment', 'UAT', 'Prototyping', 'UX / UI design'],
   },

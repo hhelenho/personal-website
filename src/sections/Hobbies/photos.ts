@@ -12,9 +12,9 @@ export interface Photo {
 }
 
 export const photos: Photo[] = [
-  { src: hiking, alt: 'Helen hiking in the mountains above the clouds', caption: 'Solo hike' },
-  { src: skiing, alt: 'Helen smiling with skis at a ski resort', caption: 'Skiing' },
-  { src: marathon, alt: 'Helen with friends in Central Park', caption: 'Central Park' },
+  { src: hiking, alt: 'Helen hiking in the mountains above the clouds' },
+  { src: skiing, alt: 'Helen smiling with skis at a ski resort' },
+  { src: marathon, alt: 'Helen with friends in Central Park' },
 ];
 
 // Placeholder tiles are shown only while the gallery is empty.

@@ -22,10 +22,10 @@ const focusAreas = [
     body: 'I use Claude to debug and work through production code with engineers, from tracing a failing path to reviewing a proposed fix.',
   },
   {
-    id: 'foundations',
-    label: 'LLMs & RAG',
-    title: 'Enhancing platforms with LLMs and RAG',
-    body: 'I use LLM APIs to enhance enterprise platforms and workflows. In a full-stack app built on MongoDB Atlas vector search, I applied retrieval-augmented generation: documents are embedded, the passages most relevant to each question are retrieved, and the model answers from that retrieved context so responses stay tied to source data.',
+    id: 'llm',
+    label: 'LLM integration',
+    title: 'Enhancing research with an LLM layer',
+    body: 'I leverage an LLM API layer on top of existing operations platforms to enhance the research process, so users can investigate with plain-language questions instead of manual queries.',
   },
 ];
 
@@ -41,9 +41,9 @@ function AISection() {
 
       <Reveal delay={100}>
         <p className={styles.lead}>
-          I'm most interested in applying AI to the everyday work of finance teams: moving from LLM
-          prototypes to retrieval-grounded tools, then packaging them so recurring work runs with less
-          manual prompting.
+          I'm most interested in applying AI to the everyday work of finance teams: adding LLM capabilities
+          to the platforms they already use, then packaging recurring work so it runs with less manual
+          prompting.
         </p>
       </Reveal>
 
