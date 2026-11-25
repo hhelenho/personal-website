@@ -20,11 +20,12 @@ const focusAreas: FocusArea[] = [
   },
   {
     id: 'testing',
-    label: 'Browser testing',
-    title: 'Testing UI behavior before release',
+    label: 'Testing',
+    title: 'Testing UI behavior and user needs before release',
     summary:
-      'I use Playwright to test UI flows and explore unexpected behavior before a release reaches production. Playwright is the standard for reliable browser tests, and AI agents now help draft them.',
+      'I use Playwright to test UI flows and explore unexpected behavior before a release reaches production, and I use synthetic user testing to see how stakeholders would respond to a product before it launches.',
     approach: [
+      'Synthetic user testing: I create AI-powered representations of target stakeholders, such as fund accounting and P&L valuation users, so they can try a customized interaction with a new product, prototype, or proposed feature.',
       'Explore unexpected UI behavior with Playwright before release, and record each finding as a reproducible case.',
       'Treat AI-generated tests as drafts: review assertions and self-healed selectors before they run in CI.',
       'Prefer role-based locators and auto-waiting assertions, so tests follow what users see.',
