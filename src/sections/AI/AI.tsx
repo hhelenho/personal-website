@@ -24,8 +24,8 @@ const focusAreas = [
   {
     id: 'foundations',
     label: 'LLMs & RAG',
-    title: 'Grounding models in real data',
-    body: 'I built a full-stack app on LLM APIs with MongoDB Atlas vector search, the foundation for answers grounded in documents and data.',
+    title: 'Enhancing platforms with LLMs and RAG',
+    body: 'I use LLM APIs to enhance enterprise platforms and workflows. In a full-stack app built on MongoDB Atlas vector search, I applied retrieval-augmented generation: documents are embedded, the passages most relevant to each question are retrieved, and the model answers from that retrieved context so responses stay tied to source data.',
   },
 ];
 
