@@ -8,19 +8,21 @@ function Hobbies() {
   return (
     <section id="hobbies" className={styles.container}>
       <Reveal>
-        <h2 className="sectionTitle">Running</h2>
+        <h2 className="sectionTitle">Outdoors</h2>
       </Reveal>
 
       <Reveal delay={100}>
         <div className={styles.intro}>
           <p className={styles.lead}>
-            Running is how I reset. I'm currently training for my next major NYC Marathon, one long run at a time.
+            In my free time I love being outside, whether that's a solo hike, a day of skiing, or a run
+            through the parks. I'm currently training for the New York City Marathon, my first marathon,
+            and I hope to keep running the majors.
           </p>
         </div>
       </Reveal>
 
       <Reveal delay={200}>
-        <div className={styles.strip} role="list" aria-label="Running photos">
+        <div className={styles.strip} role="list" aria-label="Outdoor photos">
           {photos.length > 0
             ? photos.map((photo) => (
                 <figure key={photo.src} className={styles.tile} role="listitem">

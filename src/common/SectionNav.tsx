@@ -6,7 +6,7 @@ const sections = [
   { id: 'work', label: 'Selected work' },
   { id: 'ai', label: 'AI & automation' },
   { id: 'experience', label: 'Experience' },
-  { id: 'hobbies', label: 'Running' },
+  { id: 'hobbies', label: 'Outdoors' },
   { id: 'skills', label: 'Skills' },
 ];
 

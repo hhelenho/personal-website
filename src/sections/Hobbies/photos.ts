@@ -1,8 +1,9 @@
-// Running and training photos for the Hobbies gallery.
+// Outdoor and running photos for the Outdoors gallery.
 // To add one: drop the image into src/assets/hobbies/, import it below, and add it to the list.
-// Example:
-//   import longRun from '../../assets/hobbies/long-run.jpg';
-//   export const photos: Photo[] = [{ src: longRun, alt: 'Long run in Central Park', caption: 'Long run' }];
+
+import hiking from '../../assets/hobbies/hiking.jpg';
+import skiing from '../../assets/hobbies/skiing.jpg';
+import marathon from '../../assets/hobbies/marathon.jpg';
 
 export interface Photo {
   src: string;
@@ -10,7 +11,11 @@ export interface Photo {
   caption?: string;
 }
 
-export const photos: Photo[] = [];
+export const photos: Photo[] = [
+  { src: hiking, alt: 'Helen hiking in the mountains above the clouds', caption: 'Solo hike' },
+  { src: skiing, alt: 'Helen smiling with skis at a ski resort', caption: 'Skiing' },
+  { src: marathon, alt: 'Helen with friends in Central Park', caption: 'Central Park' },
+];
 
-// Placeholder tiles are shown until real photos are added.
+// Placeholder tiles are shown only while the gallery is empty.
 export const placeholderCount = 4;
