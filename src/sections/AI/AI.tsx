@@ -29,7 +29,7 @@ const focusAreas = [
   },
 ];
 
-function AI() {
+function AISection() {
   const [activeId, setActiveId] = useState(focusAreas[0].id);
   const active = focusAreas.find((area) => area.id === activeId) ?? focusAreas[0];
 
@@ -81,4 +81,4 @@ function AI() {
   );
 }
 
-export default AI;
+export default AISection;
