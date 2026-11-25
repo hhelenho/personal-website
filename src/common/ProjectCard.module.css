@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background-color: var(--surface-color);
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 6px 12px;
+  border: 1px solid var(--accent-color);
+  border-radius: 999px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.description {
+  color: var(--muted-color);
+  font-size: 15px;
+}

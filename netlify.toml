@@ -1,0 +1,7 @@
+# Netlify builds every push to the production branch and creates a deploy preview for each pull request.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"

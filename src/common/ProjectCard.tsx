@@ -1,19 +1,19 @@
 import React from 'react';
+import styles from './ProjectCard.module.css';
 
 interface ProjectCardProps {
-  src: string;
-  link: string;
-  h3: string;
-  p: string;
+  tag: string;
+  title: string;
+  description: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ src, link, h3, p }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ tag, title, description }) => {
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer">
-      <img className="hover" src={src} alt={`${h3} logo`} />
-      <h3>{h3}</h3>
-      <p>{p}</p>
-    </a>
+    <article className={styles.card}>
+      <span className={styles.tag}>{tag}</span>
+      <h3>{title}</h3>
+      <p className={styles.description}>{description}</p>
+    </article>
   );
 };
 
