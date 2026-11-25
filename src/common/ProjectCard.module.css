@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 16px;
   padding: 32px;
   border: 1px solid var(--border-color);
@@ -29,4 +30,69 @@
 .description {
   color: var(--muted-color);
   font-size: 15px;
+}
+
+/* Pushes the toggle to the bottom so every card's footer lines up. */
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.toggle {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.icon {
+  display: inline-block;
+  transition: transform 200ms ease-in-out;
+}
+
+.iconOpen {
+  transform: rotate(45deg);
+}
+
+.details {
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+  display: grid;
+  gap: 6px;
+}
+
+.details dt {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-top: 8px;
+}
+
+.details dt:first-child {
+  margin-top: 0;
+}
+
+.details dd {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-color);
 }

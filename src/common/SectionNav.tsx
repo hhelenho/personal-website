@@ -8,6 +8,7 @@ const sections = [
   { id: 'experience', label: 'Experience' },
   { id: 'hobbies', label: 'Outdoors' },
   { id: 'skills', label: 'Skills' },
+  { id: 'contact', label: 'Contact' },
 ];
 
 // Fixed dot navigation on the right edge that highlights the section in the middle of the screen.

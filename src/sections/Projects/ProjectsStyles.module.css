@@ -9,6 +9,11 @@
   gap: 24px;
 }
 
+/* Each cell stretches to the row height so every card in a row matches. */
+.cell {
+  display: flex;
+}
+
 @media (width >= 800px) {
   .grid {
     grid-template-columns: 1fr 1fr;

@@ -2,6 +2,7 @@ import './App.css'
 import ScrollProgress from './common/ScrollProgress'
 import SectionNav from './common/SectionNav'
 import AI from './sections/AI/AI'
+import Contact from './sections/Contact/Contact'
 import Experience from './sections/Experience/Experience'
 import Footer from './sections/Footer/Footer'
 import Hero from './sections/Hero/Hero'
@@ -20,6 +21,7 @@ function App() {
       <Experience />
       <Hobbies />
       <Skills />
+      <Contact />
       <Footer />
     </>
   )

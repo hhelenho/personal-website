@@ -57,6 +57,11 @@ function Hero() {
           I design financial products and enterprise platforms that scale, bridging fund accounting,
           trading operations, and engineering so back-office workflows become tools people trust.
         </p>
+        <ul className={styles.chips} aria-label="Focus areas">
+          <li>Financial products</li>
+          <li>Enterprise platforms</li>
+          <li>AI-assisted workflows</li>
+        </ul>
         <div className={styles.actions}>
           <a className={styles.primary} href={CV} download>
             Download resume
