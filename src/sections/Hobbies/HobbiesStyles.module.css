@@ -12,22 +12,23 @@
   font-size: 18px !important;
 }
 
+/* Vertical padding keeps the hover lift and focus ring from being clipped by the scroll area. */
 .strip {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
-  padding: 4px 4px 16px;
-  margin: 0 -4px;
+  padding: 16px 8px 24px;
 }
 
 .tile {
-  flex: 0 0 min(300px, 78vw);
-  aspect-ratio: 4 / 5;
+  flex: 0 0 170px;
+  width: 170px;
+  height: 170px;
   margin: 0;
   scroll-snap-align: start;
-  border-radius: 20px;
+  border-radius: 50%;
   overflow: hidden;
   position: relative;
   background-color: var(--surface-color);
@@ -51,9 +52,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 12px 16px;
+  padding: 8px 12px;
   font-family: 'Roboto Mono', monospace;
-  font-size: 14px;
+  font-size: 12px;
+  text-align: center;
   color: #fff;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
 }
@@ -67,14 +69,22 @@
 
 .placeholder span {
   font-family: 'Roboto Mono', monospace;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  text-align: center;
+  padding: 0 16px;
   color: var(--muted-color);
 }
 
 @media (width >= 800px) {
   .tile {
-    flex-basis: 320px;
+    flex-basis: 220px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .placeholder span {
+    font-size: 14px;
   }
 }

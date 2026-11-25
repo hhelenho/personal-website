@@ -4,6 +4,7 @@ import styles from './SectionNav.module.css';
 const sections = [
   { id: 'hero', label: 'Intro' },
   { id: 'work', label: 'Selected work' },
+  { id: 'ai', label: 'AI & automation' },
   { id: 'experience', label: 'Experience' },
   { id: 'hobbies', label: 'Running' },
   { id: 'skills', label: 'Skills' },

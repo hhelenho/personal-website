@@ -16,10 +16,10 @@ const projects = [
       'Own product requirements for pricing and valuation workflows, working with the valuation team and engineers through UAT to ship fixes that protect end-of-day NAV.',
   },
   {
-    tag: 'AI prototyping',
-    title: 'Reconciliation stress-testing',
+    tag: 'AI assistant',
+    title: 'Trade break investigation assistant',
     description:
-      'Used AI-assisted prototypes to stress-test reconciliation scenarios and validate requirements with stakeholders before engineering build.',
+      'Built a chat assistant that lets non-technical users investigate trade breaks in plain English, using the screen and data filters they already have open instead of writing database queries. It saves investigation context as they work through each break.',
   },
   {
     tag: 'Intake automation',
