@@ -7,8 +7,7 @@ interface FocusArea {
   label: string;
   title: string;
   summary: string;
-  standards?: string[];
-  work?: string[];
+  approach?: string[];
 }
 
 const focusAreas: FocusArea[] = [
@@ -24,15 +23,11 @@ const focusAreas: FocusArea[] = [
     label: 'Browser testing',
     title: 'Testing UI behavior before release',
     summary:
-      'Playwright is the standard for reliable browser tests, and AI agents now help draft them. I use it to test UI flows and explore unexpected behavior before a release reaches production.',
-    standards: [
-      'Role-based locators and auto-waiting assertions, so tests track what users see instead of fragile selectors.',
-      'Human review of AI-generated tests, especially assertions and self-healed selectors, so a green run means the requirement is covered.',
-      'Playwright Test Agents (Planner, Generator, Healer) draft plans and repairs, with people approving each step.',
-    ],
-    work: [
-      'Explore edge cases in operations platforms and record each unexpected behavior as a reproducible case before release.',
-      'Keep acceptance criteria owned by people, and treat AI-generated tests as drafts until they are reviewed.',
+      'I use Playwright to test UI flows and explore unexpected behavior before a release reaches production. Playwright is the standard for reliable browser tests, and AI agents now help draft them.',
+    approach: [
+      'Explore unexpected UI behavior with Playwright before release, and record each finding as a reproducible case.',
+      'Treat AI-generated tests as drafts: review assertions and self-healed selectors before they run in CI.',
+      'Prefer role-based locators and auto-waiting assertions, so tests follow what users see.',
     ],
   },
   {
@@ -40,15 +35,12 @@ const focusAreas: FocusArea[] = [
     label: 'Debugging with Claude',
     title: 'Debugging production code with engineers',
     summary:
-      'AI debugging works best as decision support: it traces failing paths and proposes fixes, while engineers verify every change before it ships.',
-    standards: [
-      'Observability first: AI is only as useful as the traces, logs, and metrics it can read.',
-      'Human approval for every suggested change, since AI-generated code still causes production issues.',
-      'Reserve deep AI analysis for high-severity incidents, where the cost and latency are justified.',
-    ],
-    work: [
+      'I use Claude to help engineers on production code. AI debugging works best as decision support: it traces failing paths and proposes fixes, while engineers verify every change before it ships.',
+    approach: [
       'Work with engineers in Claude to trace failing code paths, reproduce issues, and review proposed fixes.',
+      'Keep a person approving every suggested change, since AI-generated code still surfaces production bugs.',
       'Turn each confirmed root cause into a test, so the same failure is caught earlier next time.',
+      'Put observability first: AI is only as useful as the traces, logs, and metrics it can read.',
     ],
   },
   {
@@ -56,15 +48,11 @@ const focusAreas: FocusArea[] = [
     label: 'LLM integration',
     title: 'An LLM layer for research workflows',
     summary:
-      'Enterprise LLM features need more than a model call. The standard is a managed layer that routes requests, traces them, and controls cost and risk.',
-    standards: [
-      'An LLM gateway between the application and model providers, handling routing, fallbacks, and request-level tracing.',
-      'Evaluation and guardrails before wider rollout, with budgets and usage tracking so cost stays visible.',
-      'Governance: role-based access and audit logs for every request.',
-    ],
-    work: [
-      'I leverage an LLM API layer on top of existing operations platforms to enhance the research process, so users ask plain-language questions instead of writing queries.',
-      'The trade break investigation assistant keeps investigation context, saving at least 2–3 working hours on break research and communication.',
+      'Enterprise LLM features need more than a model call. The goal is a managed layer that routes requests, traces them, and controls cost and risk.',
+    approach: [
+      'Leverage an LLM API layer on top of existing operations platforms to enhance research, so users ask plain-language questions instead of writing queries.',
+      'The trade break investigation assistant saves at least 2–3 working hours on break research and communication.',
+      'Route LLM traffic through a gateway with tracing, budgets, and guardrails before wider rollout.',
     ],
   },
 ];
@@ -114,21 +102,11 @@ function AISection() {
           >
             <h3>{active.title}</h3>
             <p>{active.summary}</p>
-            {active.standards && (
+            {active.approach && (
               <div className={styles.block}>
-                <h4 className={styles.blockLabel}>Industry standard</h4>
+                <h4 className={styles.blockLabel}>Approach</h4>
                 <ul className={styles.list}>
-                  {active.standards.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {active.work && (
-              <div className={styles.block}>
-                <h4 className={styles.blockLabel}>In my work</h4>
-                <ul className={styles.list}>
-                  {active.work.map((item) => (
+                  {active.approach.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
