@@ -8,7 +8,7 @@ const groups = [
   },
   {
     label: 'Product & design',
-    items: ['Product discovery', 'Requirements', 'Stakeholder alignment', 'UAT', 'Prototyping', 'UX / UI design'],
+    items: ['Product discovery', 'Requirements', 'Stakeholder alignment', 'Production releases', 'Prototyping', 'UX / UI design'],
   },
   {
     label: 'Financial domain',

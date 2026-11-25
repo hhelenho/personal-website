@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.lead {
+  max-width: 64ch;
+  font-size: 18px !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.cell {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 12px;
+  padding: 28px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background-color: var(--surface-color);
+  border-left: 4px solid var(--accent-color);
+}
+
+.card h3 {
+  font-size: 18px !important;
+}
+
+.body {
+  color: var(--muted-color);
+  font-size: 15px;
+}
+
+@media (width >= 800px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

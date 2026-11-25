@@ -10,10 +10,11 @@ interface ProjectCardProps {
   tag: string;
   title: string;
   description: string;
+  impact: string;
   details?: ProjectDetails;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ tag, title, description, details }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ tag, title, description, impact, details }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -21,6 +22,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ tag, title, description, deta
       <span className={styles.tag}>{tag}</span>
       <h3>{title}</h3>
       <p className={styles.description}>{description}</p>
+      <p className={styles.impact}>
+        <span className={styles.impactLabel}>Impact</span>
+        {impact}
+      </p>
       {details && (
         <div className={styles.footer}>
           <button

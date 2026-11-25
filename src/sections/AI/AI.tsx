@@ -4,16 +4,16 @@ import Reveal from '../../common/Reveal';
 
 const focusAreas = [
   {
-    id: 'automation',
-    label: 'MCP & skills',
-    title: 'Automating recurring workflows',
-    body: 'I build MCP servers and skills that run recurring workflows across tools, so teams spend less time re-prompting the same steps by hand.',
+    id: 'agentic',
+    label: 'Agentic architecture',
+    title: 'Designing for governed, multi-step agents',
+    body: 'I am designing toward agentic systems with three layers: an orchestration layer that breaks work into steps, a governance layer for agent access, guardrails, and traceability, and evaluation that measures reliability before anything reaches production. Agent-to-agent protocols such as A2A are emerging for coordinating work across vendors.',
   },
   {
     id: 'testing',
     label: 'Browser testing',
-    title: 'Exploring UI and UAT edge cases',
-    body: 'I use Playwright MCP to test UI flows and explore unexpected UAT behavior, surfacing problems before they reach users.',
+    title: 'Exploring UI behavior before release',
+    body: 'I use Playwright to test UI flows and explore unexpected behavior, surfacing problems before they reach production.',
   },
   {
     id: 'debugging',
@@ -41,9 +41,9 @@ function AISection() {
 
       <Reveal delay={100}>
         <p className={styles.lead}>
-          I'm most interested in applying AI to the everyday work of finance teams: adding LLM capabilities
-          to the platforms they already use, then packaging recurring work so it runs with less manual
-          prompting.
+          I'm most interested in applying AI to the work finance teams do every day: adding LLM capabilities
+          to the platforms they already use, and building agentic systems that are governed and reliable in
+          production.
         </p>
       </Reveal>
 

@@ -3,6 +3,7 @@ import styles from './SectionNav.module.css';
 
 const sections = [
   { id: 'hero', label: 'Intro' },
+  { id: 'clients', label: 'Who I design for' },
   { id: 'work', label: 'Selected work' },
   { id: 'ai', label: 'AI & automation' },
   { id: 'experience', label: 'Experience' },

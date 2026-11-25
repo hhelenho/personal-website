@@ -44,6 +44,10 @@ function Hero() {
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.intro}>
+        <p className={styles.status}>
+          <span className={styles.statusDot} aria-hidden="true" />
+          Live in production
+        </p>
         <p className={styles.eyebrow}>New York, NY</p>
         <h1 className={styles.name}>
           {'Helen Ho'.split('').map((letter, i) => (
@@ -54,8 +58,9 @@ function Hero() {
         </h1>
         <h2 className={styles.role}>Product Designer</h2>
         <p className={styles.tagline}>
-          I design financial products and enterprise platforms that scale, bridging fund accounting,
-          trading operations, and engineering so back-office workflows become tools people trust.
+          I design financial products and enterprise platforms that scale across trade settlement, P&amp;L
+          valuation, fund accounting, tax, investor relations CRM, and trading surveillance. I bridge fund
+          accounting, trading operations, and engineering so back-office workflows become tools people trust.
         </p>
         <ul className={styles.chips} aria-label="Focus areas">
           <li>Financial products</li>
@@ -90,7 +95,7 @@ function Hero() {
           onClick={toggleTheme}
         />
       </div>
-      <a href="#work" className={styles.scrollCue} aria-label="Scroll to selected work">
+      <a href="#clients" className={styles.scrollCue} aria-label="Scroll to who I design for">
         <span>Scroll</span>
         <span className={styles.arrow} />
       </a>
