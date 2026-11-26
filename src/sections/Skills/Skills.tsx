@@ -8,15 +8,15 @@ const groups = [
   },
   {
     label: 'Product & design',
-    items: ['Product discovery', 'Requirements', 'Stakeholder alignment', 'Production releases', 'Prototyping', 'UX / UI design'],
+    items: ['Product ownership', 'Stakeholder alignment', 'KPI tracking', 'Requirements', 'Production releases', 'Figma prototyping', 'UX / UI design', 'AI-assisted prototyping'],
   },
   {
     label: 'Financial domain',
-    items: ['Fund accounting', 'Valuation & P&L', 'Trade settlement', 'Treasury', 'Back & middle office', 'Financial services technology'],
+    items: ['Fund accounting', 'Valuation & P&L', 'Trade settlement', 'Reconciliation', 'Post-trade operations', 'Investor reporting', 'Treasury', 'Financial services technology'],
   },
   {
-    label: 'Tools & technical',
-    items: ['Python', 'SQL', 'Java', 'AWS (Textract, A2I)', 'React', 'MongoDB Atlas', 'Power BI', 'Tableau', 'Docker', 'Git', 'Bloomberg API'],
+    label: 'AI & engineering',
+    items: ['LLM APIs', 'Prompt-based prototyping', 'Playwright', 'E2E & cross-browser testing', 'React', 'JavaScript', 'Python', 'Java', 'SQL', 'AWS (Textract, A2I)', 'Docker', 'Git', 'Power BI', 'MongoDB Atlas', 'Bloomberg API'],
   },
 ];
 

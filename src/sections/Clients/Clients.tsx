@@ -4,19 +4,19 @@ import Reveal from '../../common/Reveal';
 const stakeholders = [
   {
     title: 'Trading surveillance',
-    body: 'Learned how surveillance and compliance teams work at Point72, then built an NLP-based compliance workflow and presented it to senior stakeholders.',
+    body: 'Learned surveillance and compliance workflows at Point72, shipping an LLM summarization pipeline to production and presenting an NLP-based compliance workflow to senior stakeholders.',
   },
   {
     title: 'Investor relations',
-    body: 'Scoped investor relations needs for a document intake solution and took it from discovery to a working product.',
+    body: 'Designed an intermediary CRM UI in Figma and built an investor reporting dashboard that replaced manual month-end work.',
   },
   {
     title: 'Trading operations & P&L valuation',
-    body: 'Own valuation exceptions and stale marks with trading operations, keeping P&L analytics reliable enough to protect end-of-day NAV.',
+    body: 'Own the centralized pricing portal and valuation exceptions with trading operations, catching stale prices earlier to protect end-of-day NAV.',
   },
   {
     title: 'Fund accounting & tax',
-    body: 'Aligned fund accounting, operations, and engineering on one accounting data pipeline, and understand the tax workflows that sit alongside it.',
+    body: 'Aligned fund accounting, operations, and engineering on one accounting data pipeline, and built an intake system that handles investor tax data.',
   },
 ];
 

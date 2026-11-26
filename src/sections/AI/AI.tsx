@@ -52,7 +52,8 @@ const focusAreas: FocusArea[] = [
       'Enterprise LLM features need more than a model call. The goal is a managed layer that routes requests, traces them, and controls cost and risk.',
     approach: [
       'Leverage an LLM API layer on top of existing operations platforms to enhance research, so users ask plain-language questions instead of writing queries.',
-      'The trade break investigation assistant saves at least 2–3 working hours on break research and communication.',
+      'The trade break investigation assistant cuts investigation time by 70%, saving 30–40 minutes per break.',
+      'Shipped an LLM summarization pipeline to production for three PM desks at Point72.',
       'Route LLM traffic through a gateway with tracing, budgets, and guardrails before wider rollout.',
     ],
   },

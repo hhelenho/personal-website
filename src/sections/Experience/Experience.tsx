@@ -9,10 +9,12 @@ const roles = [
     location: 'New York, NY',
     dates: 'Jul 2025 – Present',
     points: [
-      'Design and support ETL workflows and pipeline architecture for operational trading products across fund accounting, treasury, and P&L platforms.',
-      'Own product requirements for pricing and P&L valuation systems, triaging stale marks and exceptions with the valuation team to protect end-of-day NAV.',
-      'Act as primary technical contact between engineering, fund accounting, trading operations, and investor relations.',
-      'Bring open trade settlement reporting to production across equities, fixed income, structured credit, and digital assets.',
+      'Own the centralized pricing portal, replacing fragmented price checks across multiple sources; grew usage 40% and detected stale prices 2–3 days earlier.',
+      'Built an LLM-powered assistant that lets non-technical users work through trade breaks in plain English using on-screen filters, cutting investigation time by 70%.',
+      'Built a dashboard tracking investor reporting requirements, replacing manual Excel exports and comparisons and reducing month-end reporting by 3 hours per month.',
+      'Product owner for pricing and P&L valuation systems: triage stale prices and exceptions with the valuation team, and drive fixes through UAT to production to protect end-of-day NAV.',
+      'Tested and debugged the operations trading reconciliation report, enabling reconciliation of new asset classes, including structured credit and digital assets.',
+      'Lead ETL workflows and pipeline architecture for operational trading products across fund accounting, treasury, and P&L platforms.',
     ],
   },
   {
@@ -21,8 +23,8 @@ const roles = [
     location: 'New York, NY',
     dates: 'Jun 2024 – Aug 2024',
     points: [
-      'Aligned fund accounting, operations, and engineering stakeholders on a unified accounting data pipeline.',
-      'Delivered an AWS Textract and Augmented AI solution end to end, from stakeholder discovery to a working product.',
+      'Facilitated cross-team requirements sessions with fund accounting, operations, and engineering to align on a unified accounting data pipeline.',
+      'Designed an intermediary CRM UI in Figma before a vendor CRM cutover, and built an intake system on the ChatGPT LLM API that reached 80% accuracy on investor tax data, versus about 40% for AWS Textract.',
     ],
   },
   {
@@ -31,8 +33,9 @@ const roles = [
     location: 'Stamford, CT',
     dates: 'Jun 2023 – Aug 2023',
     points: [
-      'Partnered with the options trading desk on workflows and pricing needs using Python and Bloomberg API analysis.',
-      'Built and presented an NLP-based compliance workflow to compliance and technology leaders.',
+      'Shipped an LLM summarization pipeline to production for industry announcements, pairing sentiment with trade-volume signals for three PM desks.',
+      'Prototyped a sentiment surveillance tool in Figma, then built pricing and surveillance dashboards in React, iterating with users before the production build.',
+      'Built and presented an NLP-based compliance workflow to senior compliance and technology stakeholders.',
     ],
   },
   {
@@ -41,7 +44,7 @@ const roles = [
     location: 'New York, NY',
     dates: 'May 2022 – Aug 2022',
     points: [
-      'Built accounting models for reporting and reconciliation and prepared quarterly management reports for senior leadership.',
+      'Built accounting models for reporting and reconciliation, and prepared quarterly management reports and capital allocation summaries for senior leadership.',
     ],
   },
 ];
@@ -112,6 +115,13 @@ function Experience() {
           ))}
         </ol>
       </div>
+      <Reveal>
+        <div className={styles.education}>
+          <p className={styles.dates}>Aug 2021 – May 2025</p>
+          <h3>B.S. in Finance, Double Major in Computer Science</h3>
+          <p className={styles.org}>New York University · New York, NY</p>
+        </div>
+      </Reveal>
     </section>
   );
 }
